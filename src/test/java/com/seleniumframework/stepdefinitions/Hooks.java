@@ -1,7 +1,6 @@
 package com.seleniumframework.stepdefinitions;
 
 import com.seleniumframework.base.BaseClass;
-import com.seleniumframework.base.Utility;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
@@ -12,11 +11,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.util.Properties;
 
-public class Hooks extends Utility {
+public class Hooks extends BaseClass {
     @Before
     public void initializeTestBrowser(){
         BaseClass.selectDriver("chrome");
-        Properties  testProp = init_properties("src/test/resources/Properties/config.properties");
+        Properties  testProp = readProperties("src/test/resources/Properties/config.properties");
         openBrowser(testProp.getProperty("baseUrl"));
         driver.manage().window().maximize();
     }

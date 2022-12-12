@@ -19,7 +19,6 @@ public class SearchProductStepDef extends PageObjects {
     @Then("Click on the add to Cart")
     public void clickOnTheAddToCart() {
         searchProduct.addToCort();
-
     }
 }
 

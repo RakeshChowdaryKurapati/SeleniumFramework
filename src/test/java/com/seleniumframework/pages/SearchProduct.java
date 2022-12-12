@@ -1,10 +1,9 @@
 package com.seleniumframework.pages;
 
-import com.seleniumframework.base.Utility;
+import com.seleniumframework.base.BaseClass;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
-public class SearchProduct extends Utility {
+public class SearchProduct extends BaseClass {
     private By selectProductxpath = By.xpath("//*[@id=\'maincontent\']/div[3]/div[1]/div[2]/div[2]/ol/li[1]/div/a/span/span/img");
     private By sizeOfProduct = By.id("option-label-size-143-item-170");
     private By colorOfProduct = By.xpath("//*[@id='option-label-color-93-item-50']");
@@ -15,14 +14,15 @@ private By priceOfProdyct = By.xpath("//*[@id='product-price-542']/span");
 
 
     public void selectProductspecifications(){
-       clickElement(selectProductxpath);
-        clickElement(sizeOfProduct);
-        clickElement(colorOfProduct);
-       enterText(quantity,"2");
+        driver.findElement(selectProductxpath).click();
+        driver.findElement(sizeOfProduct).click();
+        driver.findElement(colorOfProduct).click();
+        driver.findElement(quantity).sendKeys("2");
 
     }
 public void addToCort(){
-clickElement(addToCartButtton);
+    driver.findElement(addToCartButtton).click();
+
 }
 
 

@@ -66,3 +66,8 @@
 [INFO ] 2022-12-12 15:06:26.906 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (daba9af146850156f2251cc728f67459)] -> xpath: //*[@id='send2']/span] is visible
 [INFO ] 2022-12-12 15:06:27.013 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (daba9af146850156f2251cc728f67459)] -> xpath: //*[@id='send2']/span]
 [INFO ] 2022-12-12 15:06:27.274 [main] Log - Customer Login Magento Commerce - website to practice selenium | demo website for automation testing | selenium practice sites
+[INFO ] 2022-12-12 16:16:35.549 [main] Log - chrome browser is selected
+[INFO ] 2022-12-12 16:20:24.931 [main] Log - chrome browser is selected
+[INFO ] 2022-12-12 16:20:42.054 [main] Log - enter text as rakeshchowdarykurapati@gmail
+[INFO ] 2022-12-12 16:20:42.165 [main] Log - enter text as 112Rakesh@
+[INFO ] 2022-12-12 16:20:42.484 [main] Log - Customer Login Magento Commerce - website to practice selenium | demo website for automation testing | selenium practice sites

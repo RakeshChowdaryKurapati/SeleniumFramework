@@ -1,16 +1,11 @@
 package com.seleniumframework.pages;
 
-import com.seleniumframework.base.Utility;
+import com.seleniumframework.base.BaseClass;
 import com.seleniumframework.logs.Log;
-import com.seleniumframework.stepdefinitions.PageObjects;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class LoginPage extends Utility{
+public class LoginPage extends BaseClass {
 private By loginLinkXpath = By.linkText("Sign In");
     private By emailIdXpath = By.id( "email");
    private  By passwordXpath = By.id("pass");
@@ -20,13 +15,12 @@ private By loginLinkXpath = By.linkText("Sign In");
 
 public void login(String username,String password) {
 
-clickElement(loginLinkXpath);
-    enterText(emailIdXpath,username);
-    enterText(passwordXpath, password);
-    clickElement(loginBtXpath);
-
-
-
+driver.findElement(loginLinkXpath).click();
+driver.findElement(emailIdXpath).sendKeys(username);
+Log.info("enter text as "+username);
+driver.findElement(passwordXpath).sendKeys(password);
+    Log.info("enter text as "+password);
+driver.findElement(loginBtXpath).click();
 }
     public void VerifyHomepageTitle() {
         String actualTitle = driver.getTitle();

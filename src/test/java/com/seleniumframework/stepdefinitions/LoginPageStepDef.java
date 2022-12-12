@@ -1,8 +1,5 @@
 package com.seleniumframework.stepdefinitions;
 
-import com.seleniumframework.base.Utility;
-import com.seleniumframework.pages.HomePage;
-import com.seleniumframework.pages.LoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
